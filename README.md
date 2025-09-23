@@ -1,19 +1,19 @@
 # MCP Server Definitions for Claude Code
 
-Loading all MCP servers simultaneously in Claude Code consumes unnecessary context window space. Claude Code allows you to load a single MCP server before any session.
-This repository stores some of the most commonly used MCP servers so you can use them with ease.
+Loading all MCP server simultaneously in Claude Code consumes unnecessary context window space. Claude Code allows you to load a single MCP server before any session.
+This repository stores some of the most commonly used MCP server so you can use them with ease.
 
 Windows
 
 ```cmd
 # Option 1: Temporary (current session only)
 set REF_API_KEY=your_ref_api_key_here
-claude --mcp-config \{path-to-file}\{mcp-server}.json
+claude --mcp-config \{path-to-file}\server\{mcp-server}.json
 
 # Option 2: Permanent (system-wide)
 setx REF_API_KEY "your_ref_api_key_here"
 # Note: Close and reopen terminal after setx, then run:
-claude --mcp-config \{path-to-file}\{mcp-server}.json
+claude --mcp-config \{path-to-file}\server\{mcp-server}.json
 ```
 
 Mac - use with aliases
@@ -47,5 +47,5 @@ source ~/.bashrc
 Feel free to contribute or fork this repository! When contributing new MCP server configurations you can use the `/add-new-mcp` command to help with the process
 
 ```bash
-/add-new-mcp {mcp-server-name}.json
+/add-new-mcp server/{mcp-server-name}.json
 ```

@@ -21,13 +21,13 @@ Start Claude Code with MCP server configurations:
 
 ```bash
 # For Playwright capabilities
-claude --mcp-config playwright.json
+claude --mcp-config server/playwright.json
 
 # For Context7 capabilities
-claude --mcp-config context7.json
+claude --mcp-config server/context7.json
 
 # Multiple configs can be combined
-claude --mcp-config playwright.json --mcp-config context7.json
+claude --mcp-config server/playwright.json --mcp-config server/context7.json
 ```
 
 ## Development Workflow
