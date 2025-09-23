@@ -3,6 +3,18 @@
 Loading all MCP server simultaneously in Claude Code consumes unnecessary context window space. Claude Code allows you to load a single MCP server before any session.
 This repository stores some of the most commonly used MCP server so you can use them with ease.
 
+## Mac & Linux - use with aliases
+
+```zsh
+# For zsh users
+echo "source $(pwd)/.mcp-aliases" >> ~/.zshrc
+source ~/.zshrc
+
+# For bash users
+echo "source $(pwd)/.mcp-aliases" >> ~/.bashrc
+source ~/.bashrc
+```
+
 ## Windows
 
 ### Setting API Keys (if required by MCP server)
@@ -26,17 +38,6 @@ claude --mcp-config server\playwright.json
 claude --mcp-config server\github.json
 ```
 
-## Mac - use with aliases
-
-```zsh
-# For zsh users
-echo "source $(pwd)/.mcp-aliases" >> ~/.zshrc
-source ~/.zshrc
-
-# For bash users
-echo "source $(pwd)/.mcp-aliases" >> ~/.bashrc
-source ~/.bashrc
-```
 
 ## MCP Servers
 
