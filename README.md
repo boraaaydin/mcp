@@ -37,11 +37,12 @@ source ~/.bashrc
 | Ref | `claude-ref` | Documentation | HTTP-based MCP server for API reference and tools |
 | Sequential Thinking | `claude-sthink` | Thinking | MCP server that provides sequential thinking capabilities for enhanced reasoning |
 | GitHub | `claude-github` | Development | GitHub integration for repository management and code collaboration |
+| Supabase | `claude-supabase` | Database | PostgreSQL database and backend-as-a-service integration |
 
 ## Contributing
 
-Feel free to contribute or fork this repository! When contributing new MCP server configurations you can use the `/AddMcp` command to help with the process
+Feel free to contribute or fork this repository! When contributing new MCP server configurations you can use the `/add-new-mcp` command to help with the process
 
 ```bash
-/AddMcp {mcp-server-name}.json
+/add-new-mcp {mcp-server-name}.json
 ```

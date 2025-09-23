@@ -7,3 +7,4 @@ alias claude-context7='set -a && source .env && set +a && claude --mcp-config co
 alias claude-playwright='set -a && source .env && set +a && claude --mcp-config playwright.json'
 alias claude-sthink='set -a && source .env && set +a && claude --mcp-config sequential-thinking.json'
 alias claude-github='set -a && source .env && set +a && claude --mcp-config github.json'
+alias claude-supabase='set -a && source .env && set +a && claude --mcp-config supabase.json'
