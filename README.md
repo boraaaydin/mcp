@@ -32,13 +32,13 @@ source ~/.bashrc
 
 | Server | Alias | Category | Description |
 |--------|-------|----------|-------------|
-| Playwright | `claude-playwright` | Testing | Browser automation and web testing capabilities |
-| BrowserMCP | `claude-browsermcp` | Testing | Browser automation and web scraping capabilities |
 | Apify | `claude-apify` | Web Scraping | Web scraping and automation platform with actor-based workflows |
+| BrowserMCP | `claude-browsermcp` | Testing | Browser automation and web scraping capabilities |
 | Context7 | `claude-context7` | Documentation | Upstash's context management service for storing and retrieving contextual data |
+| GitHub | `claude-github` | Development | GitHub integration for repository management and code collaboration |
+| Playwright | `claude-playwright` | Testing | Browser automation and web testing capabilities |
 | Ref | `claude-ref` | Documentation | HTTP-based MCP server for API reference and tools |
 | Sequential Thinking | `claude-sthink` | Thinking | MCP server that provides sequential thinking capabilities for enhanced reasoning |
-| GitHub | `claude-github` | Development | GitHub integration for repository management and code collaboration |
 | Supabase | `claude-supabase` | Database | PostgreSQL database and backend-as-a-service integration |
 | Vercel | `claude-vercel` | Deployment | Deploy and manage serverless functions and web applications |
 
