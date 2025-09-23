@@ -6,6 +6,9 @@ This repository stores some of the most commonly used MCP server so you can use 
 ## Mac & Linux - use with aliases
 
 ```zsh
+# Copy environment variables template
+cp .env.example .env
+
 # For zsh users
 echo "source $(pwd)/.mcp-aliases" >> ~/.zshrc
 source ~/.zshrc
