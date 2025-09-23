@@ -10,3 +10,4 @@
 |--------|-------------|
 | Playwright | Browser automation and web testing capabilities |
 | Context7 | Upstash's context management service for storing and retrieving contextual data |
+| Ref | HTTP-based MCP server for API reference and tools |
