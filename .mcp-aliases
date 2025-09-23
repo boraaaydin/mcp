@@ -1,0 +1,7 @@
+# Claude Code MCP Aliases
+# Automatically load .env variables when running Claude with MCP configs
+
+alias claude-mcp='set -a && source .env && set +a && claude'
+alias claude-ref='set -a && source .env && set +a && claude --mcp-config ref.json'
+alias claude-context7='set -a && source .env && set +a && claude --mcp-config context7.json'
+alias claude-playwright='set -a && source .env && set +a && claude --mcp-config playwright.json'

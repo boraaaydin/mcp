@@ -33,6 +33,7 @@ claude --mcp-config playwright.json --mcp-config context7.json
 ## Development Workflow
 
 Since this is configuration-only:
+
 1. **No build process** - configurations are used directly
 2. **No testing framework** - MCP servers are tested through Claude Code usage
 3. **No linting** - JSON files should be valid JSON format
@@ -40,6 +41,7 @@ Since this is configuration-only:
 ## Dependencies
 
 **Runtime Requirements:**
+
 - Node.js (for `npx` commands)
 - Bun (for `bunx` commands)
 - Claude Code CLI
@@ -50,3 +52,10 @@ Since this is configuration-only:
 - Use `npx` for npm packages with `@latest` tag
 - Environment variables for sensitive data (API keys)
 - Modular approach: one MCP server per configuration file
+
+## Instructions When Adding New MCP
+
+- Add alias to `.mcp-aliases` file
+- Prefer mcp server configuration with http type if it is available
+- Add description to `README.md`
+- If any environment or secret needed, add variable to `.env.example` file

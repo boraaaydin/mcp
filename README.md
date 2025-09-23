@@ -1,8 +1,23 @@
 # Claude Code
 
-## MCP commands
+## Auto-loading .env variables
 
-`claude --mcp-config .ai/mcp/playwright.json`
+Add aliases to your shell config (run from this directory):
+
+```bash
+# For zsh users
+echo "source $(pwd)/.mcp-aliases" >> ~/.zshrc
+
+# For bash users
+echo "source $(pwd)/.mcp-aliases" >> ~/.bashrc
+```
+
+Then reload and use:
+```
+source ~/.zshrc
+source ~/.bashrc
+claude-ref  # Uses ref.json with auto .env loading
+```
 
 ## MCP Servers
 
