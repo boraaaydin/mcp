@@ -1,7 +1,7 @@
 # MCP Server Definitions for Claude Code
 
-Loading all MCP servers simultaneously in Claude Code consumes unnecessary context window space. Claude code allow use to load single mcp server before any session.
-This repository stores some most used mcp servers so you can use them with ease.
+Loading all MCP servers simultaneously in Claude Code consumes unnecessary context window space. Claude Code allows you to load a single MCP server before any session.
+This repository stores some of the most commonly used MCP servers so you can use them with ease.
 
 Windows
 
@@ -16,7 +16,7 @@ setx REF_API_KEY "your_ref_api_key_here"
 claude --mcp-config \{path-to-file}\{mcp-server}.json
 ```
 
-Mac - use with alias
+Mac - use with aliases
 
 ```zsh
 # For zsh users
@@ -36,3 +36,4 @@ source ~/.bashrc
 | Context7 | `claude-context7` | Documentation | Upstash's context management service for storing and retrieving contextual data |
 | Ref | `claude-ref` | Documentation | HTTP-based MCP server for API reference and tools |
 | Sequential Thinking | `claude-sthink` | Thinking | MCP server that provides sequential thinking capabilities for enhanced reasoning |
+| GitHub | `claude-github` | Development | GitHub integration for repository management and code collaboration |
