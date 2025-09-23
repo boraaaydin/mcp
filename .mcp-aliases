@@ -10,3 +10,4 @@ alias claude-github='set -a && source .env && set +a && claude --mcp-config gith
 alias claude-supabase='set -a && source .env && set +a && claude --mcp-config supabase.json'
 alias claude-browsermcp='set -a && source .env && set +a && claude --mcp-config browsermcp.json'
 alias claude-vercel='set -a && source .env && set +a && claude --mcp-config vercel.json'
+alias claude-apify='set -a && source .env && set +a && claude --mcp-config apify.json'

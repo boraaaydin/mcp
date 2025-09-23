@@ -34,6 +34,7 @@ source ~/.bashrc
 |--------|-------|----------|-------------|
 | Playwright | `claude-playwright` | Testing | Browser automation and web testing capabilities |
 | BrowserMCP | `claude-browsermcp` | Testing | Browser automation and web scraping capabilities |
+| Apify | `claude-apify` | Web Scraping | Web scraping and automation platform with actor-based workflows |
 | Context7 | `claude-context7` | Documentation | Upstash's context management service for storing and retrieving contextual data |
 | Ref | `claude-ref` | Documentation | HTTP-based MCP server for API reference and tools |
 | Sequential Thinking | `claude-sthink` | Thinking | MCP server that provides sequential thinking capabilities for enhanced reasoning |
