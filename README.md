@@ -39,6 +39,7 @@ source ~/.bashrc
 | Sequential Thinking | `claude-sthink` | Thinking | MCP server that provides sequential thinking capabilities for enhanced reasoning |
 | GitHub | `claude-github` | Development | GitHub integration for repository management and code collaboration |
 | Supabase | `claude-supabase` | Database | PostgreSQL database and backend-as-a-service integration |
+| Vercel | `claude-vercel` | Deployment | Deploy and manage serverless functions and web applications |
 
 ## Contributing
 
