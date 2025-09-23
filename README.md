@@ -3,20 +3,30 @@
 Loading all MCP server simultaneously in Claude Code consumes unnecessary context window space. Claude Code allows you to load a single MCP server before any session.
 This repository stores some of the most commonly used MCP server so you can use them with ease.
 
-Windows
+## Windows
+
+### Setting API Keys (if required by MCP server)
 
 ```cmd
 # Option 1: Temporary (current session only)
-set REF_API_KEY=your_ref_api_key_here
-claude --mcp-config \{path-to-file}\server\{mcp-server}.json
+set XYZ_API_KEY=your_api_key_here
 
 # Option 2: Permanent (system-wide)
-setx REF_API_KEY "your_ref_api_key_here"
-# Note: Close and reopen terminal after setx, then run:
-claude --mcp-config \{path-to-file}\server\{mcp-server}.json
+setx XYZ_API_KEY "your_api_key_here"
 ```
 
-Mac - use with aliases
+### Running Claude Code with MCP Servers
+
+```cmd
+# Close and reopen terminal after setting API keys, then run:
+claude --mcp-config server\{mcp-server-name}.json
+
+# Examples:
+claude --mcp-config server\playwright.json
+claude --mcp-config server\github.json
+```
+
+## Mac - use with aliases
 
 ```zsh
 # For zsh users
