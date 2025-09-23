@@ -20,6 +20,7 @@ When adding a new MCP server configuration, follow these steps:
 
 1. **Create the JSON configuration file** with the specified name
 2. **Add alias** to `.mcp-aliases` file for easy command-line access
+    - Add also to claude-all alias.
 3. **Prefer HTTP-based MCP servers** when available (use `http` type over `stdio`)
 4. **Update README.md** by adding the new server to the MCP Servers table.
     - MCP Servers should be sorted alphabetically by name

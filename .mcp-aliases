@@ -2,6 +2,7 @@
 # Automatically load .env variables when running Claude with MCP configs
 
 alias claude-mcp='set -a && source .env && set +a && claude'
+alias claude-all='set -a && source .env && set +a && claude --mcp-config server/ref.json --mcp-config server/context7.json --mcp-config server/playwright.json --mcp-config server/sequential-thinking.json --mcp-config server/github.json --mcp-config server/supabase.json --mcp-config server/browsermcp.json --mcp-config server/vercel.json --mcp-config server/apify.json'
 alias claude-ref='set -a && source .env && set +a && claude --mcp-config server/ref.json'
 alias claude-context7='set -a && source .env && set +a && claude --mcp-config server/context7.json'
 alias claude-playwright='set -a && source .env && set +a && claude --mcp-config server/playwright.json'
