@@ -33,6 +33,7 @@ source ~/.bashrc
 | Server | Alias | Category | Description |
 |--------|-------|----------|-------------|
 | Playwright | `claude-playwright` | Testing | Browser automation and web testing capabilities |
+| BrowserMCP | `claude-browsermcp` | Testing | Browser automation and web scraping capabilities |
 | Context7 | `claude-context7` | Documentation | Upstash's context management service for storing and retrieving contextual data |
 | Ref | `claude-ref` | Documentation | HTTP-based MCP server for API reference and tools |
 | Sequential Thinking | `claude-sthink` | Thinking | MCP server that provides sequential thinking capabilities for enhanced reasoning |
