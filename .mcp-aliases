@@ -2,7 +2,7 @@
 # Automatically load .env variables when running Claude with MCP configs
 
 alias claude-mcp='set -a && source .env && set +a && claude'
-alias claude-all='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/ref.json --mcp-config ~/mcp/server/context7.json --mcp-config ~/mcp/server/playwright.json --mcp-config ~/mcp/server/sequential-thinking.json --mcp-config ~/mcp/server/github.json --mcp-config ~/mcp/server/supabase.json --mcp-config ~/mcp/server/browsermcp.json --mcp-config ~/mcp/server/vercel.json --mcp-config ~/mcp/server/apify.json'
+alias claude-all='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/agent-zero.json --mcp-config ~/mcp/server/apify.json --mcp-config ~/mcp/server/browsermcp.json --mcp-config ~/mcp/server/context7.json --mcp-config ~/mcp/server/github.json --mcp-config ~/mcp/server/playwright.json --mcp-config ~/mcp/server/ref.json --mcp-config ~/mcp/server/sequential-thinking.json --mcp-config ~/mcp/server/supabase.json --mcp-config ~/mcp/server/vercel.json'
 alias claude-ref='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/ref.json'
 alias claude-context7='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/context7.json'
 alias claude-playwright='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/playwright.json'
@@ -11,4 +11,5 @@ alias claude-github='set -a && source .env && set +a && claude --mcp-config ~/mc
 alias claude-supabase='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/supabase.json'
 alias claude-browsermcp='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/browsermcp.json'
 alias claude-vercel='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/vercel.json'
+alias claude-a0='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/agent-zero.json'
 alias claude-apify='set -a && source .env && set +a && claude --mcp-config ~/mcp/server/apify.json'

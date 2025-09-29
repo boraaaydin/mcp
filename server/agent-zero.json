@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "agent-zero": {
+            "type": "sse",
+            "url": "${AGENT_ZERO_BASE_URL}/${AGENT_ZERO_TOKEN}/sse"
+        },
+        "agent-zero-http": {
+            "type": "http",
+            "url": "${AGENT_ZERO_BASE_URL}/${AGENT_ZERO_TOKEN}/http"
+        }
+    }
+}

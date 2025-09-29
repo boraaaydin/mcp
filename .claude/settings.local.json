@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__agent-zero__send_message",
+      "mcp__agent-zero-http__send_message"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
