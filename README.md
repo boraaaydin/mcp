@@ -49,6 +49,7 @@ claude --mcp-config server\github.json
 | Agent Zero | `claude-agent-zero` | AI Framework | Agent Zero AI framework with autonomous task execution capabilities |
 | Apify | `claude-apify` | Web Scraping | Web scraping and automation platform with actor-based workflows |
 | BrowserMCP | `claude-browsermcp` | Testing | Browser automation and web scraping capabilities |
+| Chrome DevTools | `claude-chrome-devtools` | Testing | Chrome DevTools Protocol integration for browser debugging and automation |
 | Context7 | `claude-context7` | Documentation | Upstash's context management service for storing and retrieving contextual data |
 | GitHub | `claude-github` | Development | GitHub integration for repository management and code collaboration |
 | Playwright | `claude-playwright` | Testing | Browser automation and web testing capabilities |
