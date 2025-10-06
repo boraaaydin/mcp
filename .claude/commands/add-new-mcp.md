@@ -26,3 +26,7 @@ When adding a new MCP server configuration, follow these steps:
 5. **Update README.md** by adding the new server to the MCP Servers table.
     - MCP Servers should be sorted alphabetically by name
 6. **Add environment variables** to `.env.example` if the MCP server requires API keys or secrets
+7. **Remind the user to reload their shell configuration** by running:
+    ```bash
+    source ~/.zshrc || source ~/.bashrc
+    ```
