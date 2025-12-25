@@ -9,6 +9,7 @@ alias claude-all='set -a && source ~/mcp/.env && set +a && claude \
   --mcp-config ~/mcp/server/chrome-devtools.json \
   --mcp-config ~/mcp/server/context7.json \
   --mcp-config ~/mcp/server/github.json \
+  --mcp-config ~/mcp/server/motion.json \
   --mcp-config ~/mcp/server/playwright.json \
   --mcp-config ~/mcp/server/ref.json \
   --mcp-config ~/mcp/server/sequential-thinking.json \
@@ -19,6 +20,7 @@ alias claude-context7='set -a && source ~/mcp/.env && set +a && claude --mcp-con
 alias claude-playwright='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/playwright.json'
 alias claude-sthink='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/sequential-thinking.json'
 alias claude-github='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/github.json'
+alias claude-motion='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/motion.json'
 alias claude-supabase='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/supabase.json'
 alias claude-browsermcp='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/browsermcp.json'
 alias claude-devtools='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/chrome-devtools.json'

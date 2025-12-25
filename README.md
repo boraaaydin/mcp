@@ -52,6 +52,7 @@ claude --mcp-config server\github.json
 | Chrome DevTools | `claude-chrome-devtools` | Testing | Chrome DevTools Protocol integration for browser debugging and automation |
 | Context7 | `claude-context7` | Documentation | Upstash's context management service for storing and retrieving contextual data |
 | GitHub | `claude-github` | Development | GitHub integration for repository management and code collaboration |
+| Motion | `claude-motion` | Development | motion.dev MCP server for Web Animation |
 | Playwright | `claude-playwright` | Testing | Browser automation and web testing capabilities |
 | Ref | `claude-ref` | Documentation | HTTP-based MCP server for API reference and tools |
 | Sequential Thinking | `claude-sthink` | Thinking | MCP server that provides sequential thinking capabilities for enhanced reasoning |
