@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "pencil": {
+      "name": "pencil",
+      "transport": "stdio",
+      "command": "${PENCIL_MCP_PATH}",
+      "args": [
+        "--app",
+        "cursor"
+      ],
+      "env": {}
+    }
+  }
+}

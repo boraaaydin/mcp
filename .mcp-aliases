@@ -10,6 +10,7 @@ alias claude-all='set -a && source ~/mcp/.env && set +a && claude \
   --mcp-config ~/mcp/server/context7.json \
   --mcp-config ~/mcp/server/github.json \
   --mcp-config ~/mcp/server/motion.json \
+  --mcp-config ~/mcp/server/pencildev.json \
   --mcp-config ~/mcp/server/playwright.json \
   --mcp-config ~/mcp/server/ref.json \
   --mcp-config ~/mcp/server/sequential-thinking.json \
@@ -27,3 +28,4 @@ alias claude-devtools='set -a && source ~/mcp/.env && set +a && claude --mcp-con
 alias claude-vercel='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/vercel.json'
 alias claude-a0='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/agent-zero.json'
 alias claude-apify='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/apify.json'
+alias claude-pencil='set -a && source ~/mcp/.env && set +a && claude --mcp-config ~/mcp/server/pencildev.json'

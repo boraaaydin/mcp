@@ -10,12 +10,10 @@ This repository stores some of the most commonly used MCP server so you can use 
 cp .env.example .env
 
 # For zsh users
-echo "source $(pwd)/.mcp-aliases" >> ~/.zshrc
-source ~/.zshrc
+echo "source $(pwd)/.mcp-aliases" >> ~/.zshrc && source ~/.zshrc
 
 # For bash users
-echo "source $(pwd)/.mcp-aliases" >> ~/.bashrc
-source ~/.bashrc
+echo "source $(pwd)/.mcp-aliases" >> ~/.bashrc && source ~/.bashrc
 ```
 
 ## Windows
@@ -53,6 +51,7 @@ claude --mcp-config server\github.json
 | Context7 | `claude-context7` | Documentation | Upstash's context management service for storing and retrieving contextual data |
 | GitHub | `claude-github` | Development | GitHub integration for repository management and code collaboration |
 | Motion | `claude-motion` | Development | motion.dev MCP server for Web Animation |
+| Pencil | `claude-pencil` | Design | Visual design and prototyping tool with .pen file editing capabilities |
 | Playwright | `claude-playwright` | Testing | Browser automation and web testing capabilities |
 | Ref | `claude-ref` | Documentation | HTTP-based MCP server for API reference and tools |
 | Sequential Thinking | `claude-sthink` | Thinking | MCP server that provides sequential thinking capabilities for enhanced reasoning |
