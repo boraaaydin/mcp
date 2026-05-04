@@ -64,3 +64,114 @@ alias cursor-disable-sthink='cursor mcp disable sequential-thinking'
 alias cursor-disable-supabase='cursor mcp disable supabase'
 alias cursor-disable-vercel='cursor mcp disable vercel'
 alias cursor-disable-all='cursor mcp disable agent-zero && cursor mcp disable agent-zero-http && cursor mcp disable apify && cursor mcp disable browsermcp && cursor mcp disable chrome-devtools && cursor mcp disable context7 && cursor mcp disable github && cursor mcp disable motion && cursor mcp disable pencil && cursor mcp disable playwright && cursor mcp disable Ref && cursor mcp disable sequential-thinking && cursor mcp disable supabase && cursor mcp disable vercel'
+
+# Codex MCP Aliases
+# codex --config yoktur; her MCP için -c key=value override'ları kullanılır.
+# TOML dosyaları (~/mcp/codex/*.toml) referans/dokümantasyon amaçlıdır.
+unalias -m 'codex-*' 2>/dev/null
+
+function codex-mcp() { set -a && source ~/mcp/.env && set +a && codex "$@"; }
+
+function codex-a0() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c "mcp_servers.agent_zero.url=\"${AGENT_ZERO_BASE_URL}/${AGENT_ZERO_TOKEN}/sse\"" \
+        -c "mcp_servers.agent_zero_http.url=\"${AGENT_ZERO_BASE_URL}/${AGENT_ZERO_TOKEN}/http\"" "$@"
+}
+
+function codex-apify() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c "mcp_servers.apify.url=\"https://mcp.apify.com?token=${APIFY_API_TOKEN}\"" "$@"
+}
+
+function codex-browsermcp() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c 'mcp_servers.browsermcp.command="npx"' \
+        -c 'mcp_servers.browsermcp.args=["@browsermcp/mcp@latest"]' "$@"
+}
+
+function codex-devtools() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c 'mcp_servers.chrome_devtools.command="npx"' \
+        -c 'mcp_servers.chrome_devtools.args=["chrome-devtools-mcp@latest"]' "$@"
+}
+
+function codex-context7() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c 'mcp_servers.context7.command="npx"' \
+        -c 'mcp_servers.context7.args=["-y","@upstash/context7-mcp"]' "$@"
+}
+
+function codex-github() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c 'mcp_servers.github.command="npx"' \
+        -c 'mcp_servers.github.args=["-y","@modelcontextprotocol/server-github"]' "$@"
+}
+
+function codex-motion() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c 'mcp_servers.motion.command="npx"' \
+        -c 'mcp_servers.motion.args=["-y","https://api.motion.dev/registry.tgz?package=motion-studio-mcp&version=latest"]' "$@"
+}
+
+function codex-pencil() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c "mcp_servers.pencil.command=\"${PENCIL_MCP_PATH}\"" \
+        -c 'mcp_servers.pencil.args=["--app","cursor"]' "$@"
+}
+
+function codex-playwright() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c 'mcp_servers.playwright.command="npx"' \
+        -c 'mcp_servers.playwright.args=["@playwright/mcp@latest"]' "$@"
+}
+
+function codex-ref() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c "mcp_servers.ref.url=\"https://api.ref.tools/mcp?apiKey=${REF_API_KEY}\"" "$@"
+}
+
+function codex-sthink() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c 'mcp_servers.sequential_thinking.command="npx"' \
+        -c 'mcp_servers.sequential_thinking.args=["-y","@modelcontextprotocol/server-sequential-thinking"]' "$@"
+}
+
+function codex-supabase() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c 'mcp_servers.supabase.command="npx"' \
+        -c 'mcp_servers.supabase.args=["-y","@supabase/mcp-server-supabase","--read-only","--project-ref=<project-ref>"]' \
+        -c 'mcp_servers.supabase.env.SUPABASE_ACCESS_TOKEN="<access-token>"' "$@"
+}
+
+function codex-vercel() {
+  set -a && source ~/mcp/.env && set +a
+  codex -c 'mcp_servers.vercel.url="https://mcp.vercel.com"' "$@"
+}
+
+function codex-all() {
+  set -a && source ~/mcp/.env && set +a
+  codex \
+    -c "mcp_servers.agent_zero.url=\"${AGENT_ZERO_BASE_URL}/${AGENT_ZERO_TOKEN}/sse\"" \
+    -c "mcp_servers.agent_zero_http.url=\"${AGENT_ZERO_BASE_URL}/${AGENT_ZERO_TOKEN}/http\"" \
+    -c "mcp_servers.apify.url=\"https://mcp.apify.com?token=${APIFY_API_TOKEN}\"" \
+    -c 'mcp_servers.browsermcp.command="npx"' \
+    -c 'mcp_servers.browsermcp.args=["@browsermcp/mcp@latest"]' \
+    -c 'mcp_servers.chrome_devtools.command="npx"' \
+    -c 'mcp_servers.chrome_devtools.args=["chrome-devtools-mcp@latest"]' \
+    -c 'mcp_servers.context7.command="npx"' \
+    -c 'mcp_servers.context7.args=["-y","@upstash/context7-mcp"]' \
+    -c 'mcp_servers.github.command="npx"' \
+    -c 'mcp_servers.github.args=["-y","@modelcontextprotocol/server-github"]' \
+    -c 'mcp_servers.motion.command="npx"' \
+    -c 'mcp_servers.motion.args=["-y","https://api.motion.dev/registry.tgz?package=motion-studio-mcp&version=latest"]' \
+    -c "mcp_servers.pencil.command=\"${PENCIL_MCP_PATH}\"" \
+    -c 'mcp_servers.pencil.args=["--app","cursor"]' \
+    -c 'mcp_servers.playwright.command="npx"' \
+    -c 'mcp_servers.playwright.args=["@playwright/mcp@latest"]' \
+    -c "mcp_servers.ref.url=\"https://api.ref.tools/mcp?apiKey=${REF_API_KEY}\"" \
+    -c 'mcp_servers.sequential_thinking.command="npx"' \
+    -c 'mcp_servers.sequential_thinking.args=["-y","@modelcontextprotocol/server-sequential-thinking"]' \
+    -c 'mcp_servers.supabase.command="npx"' \
+    -c 'mcp_servers.supabase.args=["-y","@supabase/mcp-server-supabase","--read-only","--project-ref=<project-ref>"]' \
+    -c 'mcp_servers.vercel.url="https://mcp.vercel.com"' "$@"
+}

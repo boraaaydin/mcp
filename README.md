@@ -10,10 +10,12 @@ This repository stores some of the most commonly used MCP server so you can use 
 cp .env.example .env
 
 # For zsh users
-echo "source $(pwd)/.mcp-aliases" >> ~/.zshrc && source ~/.zshrc
+echo "~source $(pwd)~/.mcp-aliases" >> ~/.zshrc
+source ~/.zshrc
 
 # For bash users
-echo "source $(pwd)/.mcp-aliases" >> ~/.bashrc && source ~/.bashrc
+echo "source $(pwd)/.mcp-aliases" >> ~/.bashrc 
+source ~/.bashrc
 ```
 
 ## Windows
